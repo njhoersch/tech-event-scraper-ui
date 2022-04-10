@@ -1,0 +1,10 @@
+<div class="event-search">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Search Events</mat-label>
+        <input
+            matInput
+            [(ngModel)]="searchValue"
+            (keyup)="handleKeyUpEvent()"
+        />
+    </mat-form-field>
+</div>

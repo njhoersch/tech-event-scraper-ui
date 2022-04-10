@@ -1,0 +1,30 @@
+.event-card {
+    background-color: #673ab7;
+    margin: 10px;
+    width: 15vw;
+    height: 15vw;
+    min-height: 250px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    font-size: 16pt;
+}
+
+.location {
+    font-size: 14pt;
+}
+
+.date {
+    font-size: 12pt;
+}
+
+.source {
+    font-size: 10pt;
+}

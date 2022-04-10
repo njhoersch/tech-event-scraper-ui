@@ -1,0 +1,12 @@
+<mat-card class="event-card">
+    <h3 class="title">{{ event.title }}</h3>
+    <p class="location">{{ event.location }}</p>
+    <div *ngIf="event.endDate" class="date">
+        <p>Start: {{ event.startDate }}</p>
+        <p>End: {{ event.endDate }}</p>
+    </div>
+    <div *ngIf="!event.endDate" class="date">
+        <p>Day: {{ event.startDate }}</p>
+    </div>
+    <p class="source">{{ event.website }}</p>
+</mat-card>

@@ -1,0 +1,12 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    font-size: 18pt;
+    color: rgb(255, 146, 146);
+}

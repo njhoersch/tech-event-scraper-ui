@@ -1,0 +1,28 @@
+<h1 class="title-message">Welcome to Tech Event Web Scraper UI!</h1>
+
+<button
+    mat-raised-button
+    color="primary"
+    (click)="onClickGetEvents()"
+    class="get-events-button"
+>
+    Get Events!
+</button>
+
+<section class="input-filtering">
+    <event-filter
+        (optionSelected)="handleFilter($event)"
+        [resetSubject]="resetSubject"
+    ></event-filter>
+
+    <event-search
+        (keyUpEventEmitter)="handleSearch($event)"
+        [resetSubject]="resetSubject"
+    ></event-search>
+</section>
+
+<mat-spinner *ngIf="loading" class="spinner"></mat-spinner>
+
+<section *ngIf="events && !loading" class="event-card-container">
+    <event-card *ngFor="let event of events" [event]="event"></event-card>
+</section>
